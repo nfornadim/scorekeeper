@@ -1,0 +1,33 @@
+.winner {
+
+		color: yellow;
+		background-color: green;
+	}
+
+.icon {
+	font-size: 20px;
+	color: #FFF;
+	margin-right: 10px;
+}
+
+.pointbar {
+
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+}
+
+footer {
+
+	background: gray;
+	color: #FFF;
+	height: 31vh;
+	margin-top: 0px;
+}
+
+.footer-text {
+	text-align: center;
+}

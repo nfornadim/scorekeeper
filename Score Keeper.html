@@ -2,28 +2,77 @@
 <html>
 <head>
 	<title>Score Keeper</title>
-	<style type="text/css">
-		.winner {
-			color: yellow;
-			background-color: green;
-		}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="score.css">
 
-	</style>
 </head>
 
 <body>
 
-	<h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <i class="fas fa-dice icon"></i>
+  <a class="navbar-brand" href="#">Score Keeper</a>
+</nav>
 
-	<p>Playing to: <span id="winnerScore">5</span></p>
+<div class="jumbotron">	
 
-	<input type="number">
+<!-- Players -->
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card card-A">
+      <div class="card-body">
+        <h1>Player A: <span id="p1Score">0</span></h1>
+        <i class="fas fa-headset"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card card-B">
+      <div class="card-body">
+       <h1>Player B: <span id="p2Score">0</span></h1>
+        <i class="fas fa-headset"></i>
+      </div>
+    </div>
+  </div>
+</div>
 
-	<button id="p1">Player One</button>
-	<button id="p2">Player Two</button>
-	<button id="reset">Reset</button>
+<!--  -->
 
-<script type="text/javascript" src="script.js"></script>
+
+
+
+<p>Winning Points: <span id="winDisplay">5</span></p>
+
+
+<div class="input-group pointbar">
+  
+  <input type="number" class="form-control" placeholder="Enter Winning Points Required !" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+  
+  <div class="input-group-append" id="button-addon4">
+    <button class="btn btn-outline-secondary" type="button" id="p1Button">Player A</button>
+    <button class="btn btn-outline-secondary" type="button" id="p2Button">Player B</button>
+  </div>
+
+</div>
+<button type="button" class="btn btn-info" id="resetButton">Reset</button>
+</div>
+
+<footer>
+	<div class="footer-text">
+		<p>Made By: Nadim Khan</p>
+	</div>
+
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  	
+  	<script type="text/javascript" src="script.js"></script>
+
 </body>
 
 </html>
